@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,body {
+    height: 100%;
+  }
+hr
+{
+    height: 2.5px;
+    width: 30rem;
+    background-color: black;
+}
+  
+  h1 {
+    font-size: 40px;
+    color: #1d5d47;
+  }
+  body {
+    font-family: "Permanent Marker", cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #69b389;
+
+  }
+  
+  .board {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  
+  .cell {
+    font-size: 4rem;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+    text-align: center;
+    text-transform: lowercase;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .cell:nth-child(3n) {
+    border-right: none;
+  }
+  
+  .cell:nth-child(n + 7) {
+    border-bottom: none;
+  }
+  
+  .statusText {
+    font-size: 30px;
+    color:#1d5d47;
+  }
+  
+  .restartBtn {
+    background-color: rgb(212, 247, 220);
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .restartBtn:hover {
+    background-color: #15482a;
+  }
+  
